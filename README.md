@@ -31,6 +31,8 @@ https://user-images.githubusercontent.com/83255812/194525143-5b22bee4-4f66-43f0-
      /* components/Router.tsx */
 
      const target = React.Children.map(children, (child) => {
+       // README에서는 왜 이렇게 바뀌지?
+       // if (React.isValidElement<{ path: string }>(child)) {
        if (React.isValidElement < { path: string } > child) {
          const {
            props: { path },
