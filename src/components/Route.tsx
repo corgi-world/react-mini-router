@@ -1,5 +1,10 @@
 import React from "react";
 
-export default function Route() {
-  return <div>Route</div>;
+interface RouteProps {
+  path: string;
+  component: JSX.Element;
+}
+
+export default function Route({ path, component }: RouteProps) {
+  return component;
 }
